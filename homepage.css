@@ -71,12 +71,6 @@ a:hover{
 .nav ul li a:hover{
     color: orange;
 }
-
-
-
-
-
-
 .image-container{
     background-image: url("./anh/header/background.jpg");
     width: 100%;

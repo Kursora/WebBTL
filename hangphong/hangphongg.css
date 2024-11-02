@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: url(anh/header/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    
+}
+.header1{
+    width: 30%;
+    margin: 0;
+    text-align: center;
+
+}
+
+a{
+    color: rgb(16, 16, 16);
+    text-decoration:none ;
+    font-weight: bold;
+}
+.left img{
+    width: 24px;
+    height: 24px;
+}
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ẩn biểu tượng menu trên màn hình lớn */
+}
+.center img{
+    width: 190px;
+    height: auto;
+}
+.right{
+    padding: 0;
+}
+
+
+a:hover{
+    color: orange;
+    text-decoration: none;
+}
+.slide-container{
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 3s;
+}
+.slide-container img{
+display: block;
+position:absolute;
+width: 100%;
+height: 70%;
+top: 0;
+left: 0;
+}
+.section{
+    width: 30%;
+    text-align: center;
+    border-left: 1px solid black;
+    padding-top: 20px;
+    color: black;
+}
+
+ .img1{
+    width: 100px;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.section a img{
+   width: 25px;
+   height: auto;
+   object-fit: cover;
+}
+
+.main-nav {
+    background-color:rgb(228, 220, 220);
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    font-weight: bold;
+    font-size:20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    color: orange;
+}
+@media (max-width: 768px) {
+    .header1 .left, .header1 .right, .main-nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.nav{
+    text-decoration: none;
+}
+.nav a{
+    text-decoration: none;
+}
+#slide{
+    overflow: hidden;
+}.promotion-section {
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: visible;
+}
+
+.promotion-section h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color:#ffffff;
+    padding: 0;
+    overflow: visible;
+}
+.promotion-section p {
+    font-size: 40px;
+    color:#ffffff;
+    margin-top: 5px;
+}
+
+
+.room-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 0; 
+    padding: 20px 0; 
+}
+
+.room-card {
+    flex: 0 0 calc(25% - 20px); 
+    box-sizing: border-box; 
+    margin: 10px; 
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-card img {
+    width: 100%; 
+    height: 200px; 
+    border-radius: 10px;
+}
+
+.room-info h3 {
+    font-size: 1.5em;
+    margin: 2px 0;
+    color: #333;
+}
+
+.room-info p {
+    font-size: 20px;
+    margin: 2px 0;
+    color: #171616;
+}
+
+.room-info strong {
+    font-size: 26px;
+    color: #ec6a5b; /* Màu đỏ nổi bật cho giá */
+}
+
+.room-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff; /* Xanh nổi bật */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room-info button:hover {
+    background-color: #00b30f; /* Màu xanh đậm khi hover */
+}
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;   
+    background-color: black;
+    
+}
+.sectionxnxx{
+    width: 30%;
+    text-align: center;
+    border-left: 1px solid black;
+    padding-top: 20px;
+    color: white;
+}
+
+ .img1{
+    width: 100px;
+    height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.sectionxnxx a img{
+   width: 25px;
+   height: auto;
+}
+
+/* CSS cho chi tiết phòng */
+.room-detail {
+    display: none; /* Ẩn ban đầu */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.room-detail.active {
+    display: block; /* Hiển thị khi được kích hoạt */
+}
+
+.room-detail .close-btn {
+    float: right;
+    cursor: pointer;
+    color: #888;
+    font-weight: bold;
+}
+
+/* Các cài đặt cho màn hình lớn */
+@media (min-width: 1024px) {
+    .room-card {
+        flex: 0 0 calc(25% - 20px);
+    }
+
+    .promotion-section h1 {
+        font-size: 80px;
+    }
+    
+    .promotion-section p {
+        font-size: 36px;
+    }
+}
+
+/* Cho màn hình trung bình (tablets) */
+@media (max-width: 1024px) {
+    .room-card {
+        flex: 0 0 calc(33.33% - 30px); /* Mỗi room-card chiếm 1/3 màn hình */
+    }
+
+    .promotion-section h1 {
+        font-size: 60px;
+    }
+    
+    .promotion-section p {
+        font-size: 26px;
+    }
+}
+
+/* Cho màn hình nhỏ (điện thoại di động) */
+@media (max-width: 768px) {
+    .room-card {
+        flex: 0 0 calc(50% - 20px); /* Mỗi room-card chiếm 1/2 màn hình */
+    }
+
+    .promotion-section h1 {
+        font-size: 40px;
+    }
+    
+    .promotion-section p {
+        font-size: 22px;
+    }
+
+    .room-detail {
+        width: 90%; /* Chiếm phần lớn màn hình điện thoại */
+    }
+}
+
+/* Cho màn hình rất nhỏ (điện thoại nhỏ) */
+@media (max-width: 480px) {
+    .room-card {
+        flex: 0 0 100%; /* Mỗi room-card chiếm toàn bộ chiều rộng */
+    }
+
+    .promotion-section h1 {
+        font-size: 30px;
+    }
+    
+    .promotion-section p {
+        font-size: 12px;
+    }
+
+    .room-detail {
+        width: 100%; /* Chiếm toàn bộ màn hình rất nhỏ */
+    }
+}
+

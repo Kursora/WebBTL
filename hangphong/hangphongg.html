@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Hotel</title>
+    <link rel="stylesheet" href="hangphongg.css">
+</head>
+<body>
+<header>
+    <div class="header1">
+        <div class="left">
+            <a href=""><img src="./anh/header/tải xuống.jpg" alt="">1900 1089</a>
+            <a href=""><img src="./anh/header/iconfbsdv.png" alt=""></a>
+            <a href=""><img src="./anh/header/iconinsss.png" alt=""></a>
+            <a href=""><img src="./anh/header/sm_5aeee59357bbb.png" alt=""></a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="header1">
+        <div class="center">
+            <img src="./anh/header/Screenshot_2024-10-28_003623-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <div class="header1">
+        <div class="right">
+            <a href="">Đăng nhập</a>
+        </div>
+    </div>
+</header>
+<div class="main-nav">
+    <ul>
+        <li><a href="">Tổng quan</a></li>
+        <li><a href="">Hạng phòng</a></li>
+        <li><a href="">Ưu đãi</a></li>
+        <li><a href="">Dịch vụ</a></li>
+        <li><a href="">Hỏi đáp</a></li>
+    </ul>
+</div>
+<section id="slide">
+    <div class="slide-container">
+        <img src="anh/header/slider_1.webp">
+        <img src="anh/header/checkin.jpg">
+        <img src="anh/header/khuyen-mai-night-deal_1727322389.jpg">
+        <img src="anh/header/slider_3.webp">
+    </div>
+</section>
+<section class="promotion-section">
+    <h1>Hạng Phòng</h1>
+    <p>Giá Phòng Từ Ngày 1/11/2024 - 4/11/2024</p>
+    <div class="room-list">
+        <div class="room-card" onclick="showRoomDetails('Phòng Standard', '25 m², 1 giường đôi, Tủ quần áo nhỏ, tivi, bàn cạnh giường, và phòng tắm riêng ', '1,000,000 VND',)">
+            <img src="anh/header/mt1.jpg" alt="Phòng Standard">
+            <div class="room-info">
+                <h3>Phòng Standard</h3>
+                <p>Giá từ <strong>1,000,000 VNĐ</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Standard', '1,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Superior', '30 m² - 2 giường đơn,  tivi, và tủ lạnh nhỏ, phòng tắm riêng với tiện nghi nâng cấp', '1,500,000 VND')">
+            <img src="anh/header/mt2.jpg" alt="Phòng Superior">
+            <div class="room-info">
+                <h3>Phòng Superior</h3>
+                <p>Giá từ <strong>1,500,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Superior', '1,500,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Deluxe', '35 m² - 3 giường đơn, Sofa, bàn trà, tivi lớn, tủ quần áo rộng hơn, minibar và ban công', '2,500,000 VND')">
+            <img src="anh/header/mt3.jpg" alt="Phòng Deluxe">
+            <div class="room-info">
+                <h3>Phòng Deluxe</h3>
+                <p>Giá từ <strong>2,500,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Deluxe', '2,500,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Suite', '45 m² - 1 giường cỡ lớn, Phòng khách riêng, sofa, bàn trà, tivi, minibar, và thường có thêm khu vực bếp nhỏ và tầm nhìn đẹp', '4,000,000 VND')">
+            <img src="anh/header/mt62.jpg" alt="Phòng Suite">
+            <div class="room-info">
+                <h3>Phòng Suite</h3>
+                <p>Giá từ <strong>4,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Suite', '4,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="promotion-section">
+    <div class="room-list">
+        <div class="room-card" onclick="showRoomDetails('Phòng Family', '50 m² - 2 giường đôi, Tivi, sofa, tủ lạnh, đôi khi có cả khu vực bếp hoặc bàn ăn nhỏ cho gia đình', '5,000,000 VND')">
+            <img src="anh/header/mt7family.jpg" alt="Phòng Family">
+            <div class="room-info">
+                <h3>Phòng Family</h3>
+                <p>Giá từ <strong>5,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Family', '5,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Executive', '45 m² - giường cỡ lớn, Bàn làm việc rộng rãi với ghế thoải mái, dành cho khách công tác,Tivi lớn, ghế sofa, minibar, có thêm dịch vụ văn phòng', '4,500,000 VND')">
+            <img src="anh/header/mt42.jpg" alt="Phòng Executive">
+            <div class="room-info">
+                <h3>Phòng Executive</h3>
+                <p>Giá từ <strong>4,500,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Executive', '4,500,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Connecting', '60 m² - 1 giường đôi và 2 giường đơn trong hai phòng kết nối, Mỗi phòng có bàn làm việc riêng,  Tivi, sofa, tủ lạnh', '6,000,000 VND')">
+            <img src="anh/header/mt52.jpg" alt="Phòng Connecting">
+            <div class="room-info">
+                <h3>Phòng Connecting</h3>
+                <p>Giá từ <strong>6,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Connectingd', '6,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng President Suite', '125 m² - 1 giường cỡ lớn, Bàn làm việc sang trọng, khu vực làm việc độc lập, Phòng khách riêng, phòng ăn, sofa cao cấp, tivi lớn, bếp nhỏ, và phòng tắm với bồn tắm sang trọng', '15,000,000 VND')">
+            <img src="anh/header/mt8.jpg" alt="Phòng President Suite ">
+            <div class="room-info">
+                <h3>Phòng President Suite </h3>
+                <p>Giá từ <strong>15,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng President Suite', '15,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="promotion-section">
+    <div class="room-list">
+        <div class="room-card" onclick="showRoomDetails('Phòng Penthouse', '150 m² - 1 giường cỡ lớn, Bàn làm việc lớn, khu vực làm việc riêng biệt, Không gian sống rộng rãi, tivi lớn, khu vực giải trí, bồn tắm, sân thượng hoặc ban công, và có hồ bơi riêng', '20,000,000 VND')">
+            <img src="anh/header/mt11.jpg" alt="Phòng Penthouse">
+            <div class="room-info">
+                <h3>Phòng Penthouse</h3>
+                <p>Giá từ <strong>20,000,000  VNĐ</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Penthouse', '20,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Villa', '25 m² - 1 giường đôi, Có khu vực bàn làm việc hoặc bàn ăn nhỏ, Ghế sofa, tivi, phòng tắm riêng, sân vườn hoặc hồ bơi riêng, không gian sống riêng biệt', '8,000,000 VND')">
+            <img src="anh/header/mt10.jpg" alt=" Phòng Villa">
+            <div class="room-info">
+                <h3> Phòng Villa</h3>
+                <p>Giá từ <strong> 8,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Villa', '8,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Studio', '35 m² - 1 giường đơn, Bếp nhỏ, tivi, sofa, và bàn ăn, phù hợp với khách ở dài hạn', '2,000,000 VND')">
+            <img src="anh/header/mt9.jpg" alt="Phòng Studio">
+            <div class="room-info">
+                <h3>Phòng Studio</h3>
+                <p>Giá từ <strong>2,000,000 VND</strong> /đêm</p>
+                <button class="book-button" onclick="bookRoom('Phòng Studio', '2,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+        <div class="room-card" onclick="showRoomDetails('Phòng Phòng Tổ Chức Sự Kiện', '300 m² - 100 chỗ ngồi, có màn hình led, có loa, mic, đầy đủ tiện nghi phục vụ cho sự kiện', '100,000,000 VND')">
+            <img src="anh/header/sukien.jpg" alt="Phòng Tổ Chức Sự Kiện">
+            <div class="room-info">
+                <h3>Phòng Phòng Tổ Chức Sự Kiện</h3>
+                <p>Giá từ <strong>100,000,000 VND</strong> /Sự Kiện</p>
+                <button class="book-button" onclick="bookRoom('Phòng Tổ Chức Sự Kiện', '100,000,000 VND')">Đặt ngay</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="room-detail" id="roomDetail">
+    <span class="close-btn" onclick="closeDetail()">×</span>
+    <h3 id="detailTitle">Chi tiết phòng</h3>
+    <p id="detailArea">Diện tích:</p>
+    <p id="detailPrice">Giá:</p>
+</div>
+
+<div class="footer">
+    <div class="sectionxnxx">
+        <p>© 2022 Mường Thanh Hospitality. All Rights Reserved.</p>
+    </div>
+    <div class="sectionxnxx">
+        <img src="./anh/header/footer.png" alt="" class="img1">
+    </div>
+    <div class="section">
+        <a href=""><img src="./anh/header/fb.png" alt=""></a>
+        <a href=""><img src="./anh/header/it.png" alt=""></a>
+        <a href=""><img src="./anh/header/yt.png" alt=""></a>
+    </div>
+</div>
+<script src="hangphongg.js"></script>
+</body>
+<script>
+    const imgPosition = document.querySelectorAll(".slide-container img");
+    const imgContainer = document.querySelector('.slide-container');
+    let imgNumber = imgPosition.length;
+    let index = 0;
+    imgPosition.forEach(function(image, index){
+        image.style.left = index * 100 + "%";
+    });
+    function imgSlide() {
+        index++;
+        if (index >= imgNumber) {
+            index = 0;
+        }
+        imgContainer.style.transform = "translateX(-" + index * 100 + "%)";
+    }
+    setInterval(imgSlide, 5000);
+</script>
+</html>
