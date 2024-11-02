@@ -294,8 +294,6 @@ margin-right: -15px;
       display: flex;
       flex-direction: column;
      text-align: center;
-     background-color: rgb(231, 231, 231);
-
   }
   .left{
       display: none;
