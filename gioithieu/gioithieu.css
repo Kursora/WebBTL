@@ -1,0 +1,405 @@
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  width: 100vw;
+  margin: auto;
+  z-index: 1000;
+overflow: hidden;
+}
+.header1{
+  width: 30%;
+  margin: 0;
+  text-align: center;
+}
+a{
+  color: black;
+  text-decoration:none ;
+}
+.left img{
+  width: 24px;
+  height: 24px;
+}
+.menu-icon{
+  display: none;
+}
+.center img{
+  width: 130px;
+  height: auto;
+}
+.right{
+  padding: 0;
+}
+a :hover{
+  color: orange;
+}
+
+
+
+
+.nav{
+  background-color: rgb(244, 242, 242);
+  position: fixed;
+  width: 100%;
+  margin: 100px auto;
+  z-index: 1000;
+  text-align: center;
+}
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 10px auto;
+}
+.nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 30px;
+}
+a:hover{
+  color: orange;
+  text-decoration: none;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+#about {
+  background-color: #e0e0e0;
+  padding: 50px 0;
+  
+}
+.container{
+  margin: 100px 50px auto;
+  
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Allison", handwriting !important;
+  font-size: 40px;
+
+}
+
+#about p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#about img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  max-width: 600px;
+
+}
+#about h3 {
+  font-family: "Allison", handwriting !important;
+  font-size: 25px;
+}
+.phong{
+  margin: 100px 50px auto;
+}
+.phong p{
+  font-size: 21px;
+  margin: 30px 200px;
+}
+.phong img{
+  border-radius: 20px;
+}
+.tienich{
+  margin: 100px 50px auto;
+}
+.tienich .dan{
+  font-size: 21px;
+  margin: 30px 200px;
+  
+}
+
+.dichvu{
+  display: flex;
+margin-left: 15px;
+margin-right: -15px;
+}
+.photo{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 20px;
+  justify-content: center;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+.xe{
+  width: 50%;
+}
+.boi{
+  width: 50%;
+}
+.spa{
+  width: 50%;
+}
+.ketsat{
+  width: 50%;
+}
+.wf{
+  width: 50%;
+}
+.gym{
+  width: 50%;
+}
+.sang{
+  width: 50%;
+}
+.uudai{
+  margin: 100px 50px auto;
+  
+}
+.uudai img{
+  border-radius: 10px;
+  
+}
+.uudai .ngu{
+  font-size: 21px;
+  margin: 30px 200px;
+}
+.class1 {
+  display: flex;          
+  flex-direction: row;   
+  justify-content: space-between;
+  align-items: center;  
+  margin-bottom: 50px; 
+}
+.class2{
+  display: flex;          
+  flex-direction: row-reverse; 
+  justify-content: space-between; 
+  align-items: center;  
+  margin-bottom: 50px; 
+}
+.class3{
+  display: flex;          
+    flex-direction: row;   
+    justify-content: space-between; 
+    align-items: center;   
+    margin-bottom: 50px; 
+}
+.vban{
+  text-align: center;
+  padding: auto 50px;
+  
+}
+
+.class2 .vban{
+  float: left;
+}
+#about .vban h3{
+  margin-bottom:70px ;
+  font-size: 40px;
+}
+.vban p{
+  font-size: 21px;
+  width: 50%;
+  margin: auto;
+ 
+  
+}
+.class2 .photo2 {
+  
+  text-align: right;
+}
+.photo2{
+  padding: 50px;
+}
+
+
+#services {
+  background-color: #f4f4f4;
+  padding: 0 0 50px;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#services ul {
+  list-style: none;
+  text-align: center;
+}
+
+#services ul li {
+  font-size: 15px;
+  margin: 5px 0;
+}
+.img{
+  border: 1px solid rgb(159, 239, 248);
+  border-radius: 10px;
+}
+
+
+
+
+
+
+.footer1,.footer2{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;   
+  background-color: black;
+  
+}
+.section{
+  width: 30%;
+  text-align: center;
+  border-left: 1px solid black;
+  padding-top: 20px;
+  color: white;
+}
+
+.img1{
+  width: 100px;
+  height: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.section a img{
+ width: 25px;
+ height: auto;
+}
+
+
+@media(max-width:768px){
+  .nav{
+      display: none;
+      margin: 0;
+      background-color: orange;
+      width: 35%;
+      position: absolute;
+      top: 30px;
+      left: 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+
+  }
+  .nav ul{
+      display: flex;
+      flex-direction: column;
+     text-align: center;
+     padding: 5px;
+     position: fixed;
+     z-index: 1000;
+     background-color: orange;
+     border: 2px solid white;
+     border-radius: 10px;
+  }
+  .left{
+      display: none;
+  }
+  .menu-icon{
+     display: block;
+     text-align: center;
+     cursor: pointer;
+     position: absolute;
+     left: 15px;
+  }
+  .nav.show{
+      display: block;
+  }
+
+
+  .footer2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+  }
+  .section{
+      border: none;
+      width: 100%;
+      padding: 0;
+  }
+  hr{
+      display: none;
+  }
+  .photo{
+      flex: 0 0 25%;
+      width: 50%;
+      align-items: center;
+      margin: auto;
+      }
+.dichvu{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.class1 {
+  display: block;  
+  justify-content: space-between;
+  align-items: center;  
+  margin-bottom: 50px; 
+}
+.class2{
+  display: block;  
+  justify-content: space-between; 
+  align-items: center;  
+  margin-bottom: 50px; 
+}
+.class3{
+  display: block;   
+    justify-content: space-between; 
+    align-items: center;   
+    margin-bottom: 50px; 
+
+}
+.uudai .ngu{
+  font-size: 21px;
+  margin: auto;
+}
+.phong p{
+  font-size: 21px;
+  margin: auto;
+}
+.tienich .dan{
+  font-size: 21px;
+  margin: auto;
+}
+.vban p{
+  font-size: 21px;
+  width: 100%;
+  margin: auto;
+ 
+  
+}
+
+}
