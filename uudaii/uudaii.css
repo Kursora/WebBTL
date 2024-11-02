@@ -236,7 +236,7 @@ left:0;
 .nav .show{
     display: block;
 }
-  .footer2{
+  .footer{
       display: flex;
       flex-direction: column;
       align-items: center;
