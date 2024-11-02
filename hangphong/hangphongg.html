@@ -24,19 +24,20 @@
     </div>
     <div class="header1">
         <div class="right">
-            <a href="">Đăng nhập</a>
+            <a href="/dangnhap.html">Đăng nhập</a>
         </div>
     </div>
 </header>
 <div class="main-nav">
     <ul>
-        <li><a href="">Tổng quan</a></li>
+        <li><a href="/homepage.html">Tổng quan</a></li>
         <li><a href="">Hạng phòng</a></li>
-        <li><a href="">Ưu đãi</a></li>
-        <li><a href="">Dịch vụ</a></li>
-        <li><a href="">Hỏi đáp</a></li>
+        <li><a href="/uudaii/uudaii.html">Ưu đãi</a></li>
+        <li><a href="/gioithieu/gioithieu.html">Dịch vụ</a></li>
     </ul>
 </div>
+
+
 <section id="slide">
     <div class="slide-container">
         <img src="anh/header/slider_1.webp">
@@ -45,6 +46,28 @@
         <img src="anh/header/slider_3.webp">
     </div>
 </section>
+<div id="home">
+    <div class="container">
+        <h2>Find Your Perfect Room</h2>
+        <form id="booking-form">
+            <label for="checkin">Ngày nhận:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Ngày trả:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <label for="guests">Guests:</label>
+            <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+            </select>
+            
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
 <section class="promotion-section">
     <h1>Hạng Phòng</h1>
     <p>Giá Phòng Từ Ngày 1/11/2024 - 4/11/2024</p>

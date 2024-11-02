@@ -2,15 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    
-    background-image: url(anh/header/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #333;
-}
-
-
 header{
     display: flex;
     justify-content: space-between;
@@ -53,6 +44,10 @@ a:hover{
     color: orange;
     text-decoration: none;
 }
+#slide{
+    width: 100%;
+    height: 1000px;
+}
 .slide-container{
     display: block;
     position: relative;
@@ -63,15 +58,47 @@ a:hover{
 display: block;
 position:absolute;
 width: 100%;
-height: 70%;
+height: 90%;
 top: 0;
 left: 0;
+}
+
+
+#home {
+    background-color: #e0e0e0;
+    padding: 50px 0;
+}
+
+#home h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#booking-form label, #booking-form input, #booking-form select {
+    margin: 5px 0;
+    font-size: 18px;
+    width: 20%;
+    height: auto;
+}
+button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: rgb(205, 248, 250)
+}
+button:hover{
+    background-color: gray;
 }
 .section{
     width: 30%;
     text-align: center;
     border-left: 1px solid black;
-    padding-top: 20px;
     color: black;
 }
 
@@ -104,7 +131,6 @@ left: 0;
 }
 
 .main-nav ul li a {
-    font-weight: bold;
     font-size:20px;
     color: #333;
     text-decoration: none;
@@ -114,7 +140,7 @@ left: 0;
     color: orange;
 }
 @media (max-width: 768px) {
-    .header1 .left, .header1 .right, .main-nav {
+    .header1 .left, .main-nav {
         display: none;
     }
 
@@ -157,13 +183,13 @@ left: 0;
     font-size: 100px;
     margin-bottom: 10px;
     margin-top: 2px;
-    color:#ffffff;
+    color:black;
     padding: 0;
     overflow: visible;
 }
 .promotion-section p {
     font-size: 40px;
-    color:#ffffff;
+    color:black;
     margin-top: 5px;
 }
 
@@ -327,24 +353,10 @@ left: 0;
     .room-detail {
         width: 90%; /* Chiếm phần lớn màn hình điện thoại */
     }
-}
-
-/* Cho màn hình rất nhỏ (điện thoại nhỏ) */
-@media (max-width: 480px) {
-    .room-card {
-        flex: 0 0 100%; /* Mỗi room-card chiếm toàn bộ chiều rộng */
-    }
-
-    .promotion-section h1 {
-        font-size: 30px;
-    }
-    
-    .promotion-section p {
-        font-size: 12px;
-    }
-
-    .room-detail {
-        width: 100%; /* Chiếm toàn bộ màn hình rất nhỏ */
+    #slide{
+        height: 300px;
     }
 }
+
+
 
