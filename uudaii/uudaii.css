@@ -90,7 +90,7 @@ left:0;
    object-fit: cover;
 }
 
-.main-nav{
+.nav{
     background-color: rgb(244, 242, 242);
     position: fixed;
     width: 100%;
@@ -98,7 +98,7 @@ left:0;
     z-index: 1000;
     text-align: center;
   }
-  .main-nav ul {
+  .nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -106,73 +106,17 @@ left:0;
     justify-items: center;
     margin: 10px auto;
   }
-  .main-nav ul li a{
+  .nav ul li a{
     color: black;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 30px;
   }
-  .main-nav ul li a:hover{
+  .nav ul li a:hover{
     color: orange;
     text-decoration: none;
   }
-  
-  @media(max-width:768px){
-    .main-nav{
-        display: none;
-        margin: 0;
-        background-color: orange;
-        width: 35%;
-        position: absolute;
-        top: 30px;
-        left: 20px;
-        border: 2px solid white;
-        border-radius: 10px;
-  
-    }
-    .main-nav ul{
-        display: flex;
-        flex-direction: column;
-       text-align: center;
-       padding: 5px;
-       position: fixed;
-       z-index: 1000;
-       background-color: orange;
-       border: 2px solid white;
-       border-radius: 10px;
-    }
-    .left{
-        display: none;
-    }
-    .menu-icon{
-       display: block;
-       text-align: center;
-       cursor: pointer;
-       position: absolute;
-       left: 15px;
-    }
-    .nav.show{
-        display: block;
-    }
-  
-  
-    .footer2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: none;
-    }
-    .section{
-        border: none;
-        width: 100%;
-        padding: 0;
-    }
-    hr{
-        display: none;
-    }
-    
-  
-  }
+
 .nav{
     text-decoration: none;
 }
@@ -269,4 +213,45 @@ left:0;
 .sectionxnxx a img{
    width: 25px;
    height: auto;
+}
+  
+@media(max-width:768px){
+  .nav{
+    display: none;
+
+}
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.left{
+    display: none;
+}
+.menu-icon{
+   display: block;
+   text-align: center;
+   cursor: pointer;
+   position: absolute;
+   left: 15px;
+}
+.nav .show{
+    display: block;
+}
+  .footer2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: none;
+  }
+  .section{
+      border: none;
+      width: 100%;
+      padding: 0;
+  }
+  hr{
+      display: none;
+  }
+  
+
 }
