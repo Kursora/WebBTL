@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
-
-@import url("https://fonts.googleapis.com/css2?family=Allison&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+body
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -132,7 +134,8 @@ a:hover{
     align-items: center;
 }
 
-#booking-form label, #booking-form input, #booking-form select {
+#booking-form label, #booking-form input, #booking-form select 
+{
     margin: 5px 0;
     font-size: 18px;
     width: 20%;
@@ -231,7 +234,8 @@ button:hover{
 .room-card {
     flex: 0 0 calc(25% - 20px); 
     box-sizing: border-box; 
-    margin: 10px; 
+    margin: 10px 0px 0px 0px;
+    padding: 0px 10px 10px 10px;
     text-align: center;
     background-color: #f8f8f8;
     border-radius: 10px;
@@ -257,7 +261,7 @@ button:hover{
 }
 
 .room-info strong {
-    font-size: 26px;
+    font-size: 30px;
     color: #ec6a5b; /* Màu đỏ nổi bật cho giá */
 }
 
