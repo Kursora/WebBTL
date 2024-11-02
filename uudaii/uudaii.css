@@ -1,47 +1,57 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color:white;
+    font-family: Arial, sans-serif;
+    background-color:rgb(221, 214, 214);
     color: #333;
-
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    color: #333;
-    padding: 20px;
     
 }
-.header1{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    width: 100vw;
+    margin: auto;
+    z-index: 1000;
+  overflow: hidden;
+  }
+  .header1{
     width: 30%;
     margin: 0;
     text-align: center;
-
-}
-a{
+  }
+  a{
     color: black;
     text-decoration:none ;
-}
-.left img{
+
+  }
+  .left img{
     width: 24px;
     height: 24px;
-}
-.menu-icon{
+  }
+  .menu-icon{
     display: none;
-}
-.center img{
-    width: 190px;
-    height: auto;
-}
-.right{
-    padding: 0;
-}
 
+  }
+  .center img{
+    width: 180px;
+    height: 70px;
+  }
+  .right{
+    padding: 0;
+  }
+  .left img:hover{
+    color: orange;
+  }
 
 a:hover{
     color: orange;
@@ -52,11 +62,12 @@ a:hover{
     position: relative;
     padding-top: 56.25%;
     transition: 3s;
+    margin-top: 130px;
 }
 .slide-container img{
 display: block;
 position:absolute;
-width: 100%;
+width: 110%;
 height: 70%;
 top: 0;
 left:0;
@@ -81,42 +92,89 @@ left:0;
    object-fit: cover;
 }
 
-.main-nav {
-    background-color:rgb(228, 220, 220);
-}
-
-.main-nav ul {
+.main-nav{
+    background-color: rgb(244, 242, 242);
+    position: fixed;
+    width: 100%;
+    margin: 100px auto;
+    z-index: 1000;
+    text-align: center;
+  }
+  .main-nav ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    margin: 0;
-    list-style: none;
-}
-
-.main-nav ul li {
-    margin: 0 15px;
-}
-
-.main-nav ul li a {
-    font-weight: bold;
-    font-size:20px;
-    color: #333;
+    align-items: center;
+    justify-items: center;
+    margin: 10px auto;
+  }
+  .main-nav ul li a{
+    color: black;
     text-decoration: none;
-}
-
-.main-nav ul li a:hover {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+  .main-nav ul li a:hover{
     color: orange;
-}
-@media (max-width: 768px) {
-    header, .main-nav ul {
+    text-decoration: none;
+  }
+  
+  @media(max-width:768px){
+    .main-nav{
+        display: none;
+        margin: 0;
+        background-color: orange;
+        width: 35%;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+  
+    }
+    .main-nav ul{
+        display: flex;
         flex-direction: column;
-        text-align: center;
+       text-align: center;
+       padding: 5px;
+       position: fixed;
+       z-index: 1000;
+       background-color: orange;
+       border: 2px solid white;
+       border-radius: 10px;
     }
-    .main-nav ul li {
-        margin: 10px 0;
+    .left{
+        display: none;
     }
-}
-
+    .menu-icon{
+       display: block;
+       text-align: center;
+       cursor: pointer;
+       position: absolute;
+       left: 15px;
+    }
+    .nav.show{
+        display: block;
+    }
+  
+  
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+    }
+    .section{
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+    hr{
+        display: none;
+    }
+    
+  
+  }
 .nav{
     text-decoration: none;
 }
@@ -159,7 +217,7 @@ left:0;
 }
 
 .promotion-card img {
-    width: 100%;
+    width: 120%;
     height: 180px;
     object-fit: cover;
 }
@@ -172,7 +230,7 @@ left:0;
 .promotion-card p {
     font-size: 14px;
     color: #666;
-    margin: 0 10px 10px;
+    margin: 0 10px 5px;
 }
 
 .promotion-card .price {
